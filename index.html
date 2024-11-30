@@ -19,30 +19,64 @@
         border: 2px solid red;
         display: inline-block;
         position: absolute;
-        top: 14px;
-        margin: 10px;
+        top: 20px;
+        left: 35px;
       }
 
       .mid {
         top: 30px;
         display: block;
-        width: 33%;
-        position: relative;
-        margin: 10px auto;
+        width: 50%;
+        margin: 25px auto;
       }
       .right {
         display: inline-block;
         position: absolute;
         right: 35px;
         top: 15px;
-        margin: 10px;
+        margin: 0px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: antiquewhite;
+        padding: 34px 20px;
+      }
+
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: aqua;
+        text-decoration: underline;
+      }
+
+      .left img {
+        height: 85px;
       }
     </style>
   </head>
   <body>
     <header class="header">
-      <div class="left">i m left</div>
-      <div class="mid">i m mid</div>
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="img/img2.png" alt="Logo" class="img_logo" />
+      </div>
+      <!-- mid box for nav bar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- right box for buttons  -->
       <div class="right">i m right</div>
     </header>
   </body>
